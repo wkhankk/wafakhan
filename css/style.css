@@ -62,7 +62,9 @@ p{
     margin-inline-end: 0px;
 }
 
-
+.wrapperDetail img{
+  width:100%;
+}
 
 .mainWrapper{
   align-content: center;
