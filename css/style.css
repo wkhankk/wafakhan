@@ -292,6 +292,11 @@ form{
     /*padding-bottom: 150px;
     padding-top: 50px;*/
     color: #000;
+		text-align: center;
+}
+
+.introHome{
+	margin-bottom: 100px;
 }
 
 
@@ -420,16 +425,18 @@ form{
 .galleryFilters img:hover {
 	-webkit-filter: brightness(1);
 	-webkit-filter: opacity(50%);
-  
+
 	/*border: 1px solid #e31c3d;*/
 }
 
 .parallax {
   /* The image used */
-  background-image: url("../images/bg.jpeg");
+  background-image: url("../images/wafa.jpg");
 
   /* Set a specific height */
-  min-height: 250px;
+  min-height: 200px;
+	margin-bottom: 100px;
+
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -819,7 +826,7 @@ form{
 
 /* Reduced Motion Media Quey */
 
-@media screen and (prefers-reduced-motion: reduce) { 
+@media screen and (prefers-reduced-motion: reduce) {
 
   /* removing the card flip animation */
   .flip-card:hover .flip-card-inner {
