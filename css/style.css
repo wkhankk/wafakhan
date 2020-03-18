@@ -490,7 +490,7 @@ form{
 }
 
 .flip-card-back {
-  background-color: #fe880e;
+  background-color: #981b1e;
   color: #ffffff;
   transform: rotateX(180deg);
 }
@@ -656,7 +656,7 @@ form{
 
 
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops, 992px and under) */
 @media only screen and (max-width: 992px) {
   h1 {
     font-size: 40px;
@@ -815,7 +815,25 @@ form{
 }
 
 
+/* Reduced Motion Media Quey */
 
+@media screen and (prefers-reduced-motion: reduce) { 
+
+  /* removing the card flip animation */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(0deg);
+  }
+  .flip-card:focus .flip-card-inner {
+    transform: rotateX(0deg);
+  }
+
+  /* reducing the width increment and it's animation */
+  .contact100-form-btn:hover:before {
+    background-color: #981b1e;
+    width: calc(100%);
+  }
+
+}
 
 
 @media (min-width: 48em) {

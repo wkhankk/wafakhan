@@ -272,7 +272,7 @@ textarea.input100 {
 }
 
 .contact100-form-btn:hover:before {
-  background-color: #fe880e;
+  background-color: #981b1e;
   width: calc(100% + 20px);
 }
 
@@ -344,3 +344,6 @@ textarea.input100 {
     opacity: 1;
   }
 }
+
+
+
