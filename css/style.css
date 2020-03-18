@@ -14,7 +14,7 @@ a{
 a:hover{
 	color:#fe880e;
 }
-main, footer{
+footer{
   padding: 50px;
 }
 
@@ -64,11 +64,11 @@ p{
 
 
 
-main{
+.mainWrapper{
   align-content: center;
   max-width: 1400px;
   margin: 0 auto;
-	padding-top: 120px;
+	padding: 120px 20px 20px 20px;
 }
 
 .pageCenrer{
@@ -82,6 +82,13 @@ footer{
   	grid-column-end: 7;
     color: #ffffff;
     font-size: 14px;
+}
+footer a{
+  color:#ffffff;
+}
+footer a:hover{
+  text-decoration: underline;
+  color:#e31c3d;
 }
 .footerCol{
   display: grid;
@@ -690,8 +697,15 @@ form{
     grid-column-end: span 1;
   }
 
-  main, footer {
+  footer {
     padding: 30px;
+  }
+
+  footer a{
+    color:#ffffff;
+  }
+  footer a:hover{
+    text-decoration: underline;
   }
 
   .projectInfo {
@@ -762,9 +776,15 @@ form{
 		grid-column-end: span 1;
 	}
 
-	main, footer {
+	footer {
     padding: 30px;
 	}
+  footer a{
+    color:#ffffff;
+  }
+  footer a:hover{
+    text-decoration: underline;
+  }
 
 	.projectInfo {
 	    padding: 20px 0;
