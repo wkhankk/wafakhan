@@ -7,6 +7,17 @@
   <title>Wafa Khan Portfolio</title>
       <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153674664-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153674664-2');
+</script>
+    
 </head>
 
 <body>
@@ -14,15 +25,15 @@
 
 
 <header class="header">
-  <a href="index.html" class="logo">
-    <img src="images/wafa-logo.png"/ alt="Wafa Khan Logo">
+  <a href="index.html" class="logo" tabindex="0">
+    <img src="images/wafa-logo.png" alt="Wafa Khan Logo">
   </a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="index.html" class="active">Portfolio</a></li>
-    <li><a href="images/wafa_khan_resume.pdf">Resume</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html" class="active" tabindex="1">Portfolio</a></li>
+    <li><a href="images/wafa_khan_resume.pdf" tabindex="2">Resume</a></li>
+    <li><a href="contact.html" tabindex="3">Contact</a></li>
   </ul>
 </header>
 <main>
@@ -84,31 +95,49 @@
   </div>
 
 
+<!---  Flip Card  ------------------------------------>
+  
+  <div id="flipCarContainer">
+  <div class="flip-card" tabIndex="10">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <a href="contact.html">Contact Me</a>
+      </div>
+      <div class="flip-card-back">
+        <a href="contact.html">Let's Chat</a>
+      </div>
+    </div>
+  </div>
+</div>
 
+<!--- // Flip Card  ------------------------------------>
 
 </main>
 
 <footer>
   <div class="pageCenrer">
-    <div class="footerCol">
-    <div><p class="footerIntro">Hey Hey! I'm Wafa, a visual problem solver and interaction designer who loves motion, visual design, human-centered goodness, and the outdoors.
-    </p><br><br>
-    <p><a href="images/wafa_khan_resume.pdf">View my resume →</a></p><br><br>
-    <p>© Made with ♥ by <a href="index.html"> Wafa Khan</a></p>
-    </div>
 
-    <div>
-      <p>Call me, Shoot me an email!</p>
-      <p>248.376.3583</p>
-      <p>wkhankk@umich.edu</p>
-    </div>
+    <div class="footerCol">
+
+      <div><p class="footerIntro">Hey Hey! I'm Wafa, a visual problem solver and interaction designer who loves motion, visual design, human-centered goodness, and coffee.
+        </p><br><br>
+        <p><a href="images/wafa_khan_resume.pdf">View my resume →</a></p><br><br>
+        <p>© Made with ♥ by <a href="index.html"> Wafa Khan</a></p>
+      </div>
+
+      <div>
+        <p>Call me, Shoot me an email!</p>
+        <p>248.376.3583</p>
+        <p><a href="mailto:wkhankk@umich.edu">wkhankk@umich.edu</a></p>
+      </div>
    
-    <div>
-      <p>Hit me up on</p><br>
-      <p><a href="http://www.linkedin.com/in/wafa-khan">Linkedin</a></p>
-      <p><a href="https://www.behance.net/wkhankkff14">Behance</a></p>
+      <div>
+        <p>Hit me up on</p>
+        <p><a href="http://www.linkedin.com/in/wafa-khan">Linkedin</a></p>
+        <p><a href="https://www.behance.net/wkhankkff14">Behance</a></p>
+      </div>
+    
     </div>
-  </div>
   </div>
 </footer>
 

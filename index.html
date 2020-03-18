@@ -7,19 +7,31 @@
   <title>Wafa Khan Portfolio</title>
       <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153674664-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153674664-2');
+</script>
+
+
 </head>
 
 <body>
 <header class="header">
-  <a href="index.html" class="logo">
+  <a href="index.html" class="logo" tabindex="0">
     <img src="images/wafa-logo.png" alt="Wafa Khan Logo">
   </a>
   <input class="menu-btn" type="checkbox" id="menu-btn" />
   <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
   <ul class="menu">
-    <li><a href="index.html" class="active">Portfolio</a></li>
-    <li><a href="images/wafa_khan_resume.pdf">Resume</a></li>
-    <li><a href="contact.html">Contact</a></li>
+    <li><a href="index.html" class="active" tabindex="1">Portfolio</a></li>
+    <li><a href="images/wafa_khan_resume.pdf" tabindex="2">Resume</a></li>
+    <li><a href="contact.html" tabindex="3">Contact</a></li>
   </ul>
 </header>
 
@@ -32,7 +44,7 @@
   <div class="grid_container" id="work">
 
       <div class="work1">
-        <a href="wmr.html">
+        <a href="wmr.html" tabindex="4">
           <img src="images/img_1.jpg" alt="WMR" class="work_thumbnail">
           <h3>World Medical Relief </h3>
           <span>View Case Study</span>
@@ -41,7 +53,7 @@
 
 
       <div class="work2">
-        <a href="ayani.html">
+        <a href="ayani.html" tabindex="5">
           <img src="images/img_2.jpg" alt="Ayani" class="work_thumbnail">
           <h3>Ayani App Design</h3>
           <span>View Case Study</span>
@@ -51,7 +63,7 @@
 
 
       <div class="work3">
-        <a href="xd.html">
+        <a href="xd.html" tabindex="6">
           <img src="images/img_3.jpg" alt="IBM Project" class="work_thumbnail">
           <h3>IBM XD Challenge</h3>
           <span>View Case Study</span>
@@ -61,7 +73,7 @@
 
 
       <div class="work4">
-         <a href="aas.html">
+         <a href="aas.html" tabindex="7">
           <img src="images/img_4.jpg" alt="AA Website" class="work_thumbnail">
           <h3>Aesthetic Arts</h3>
           <span>Website Design</span>
@@ -70,7 +82,7 @@
 
 
       <div class="work5">
-         <a href="pp.html">
+         <a href="pp.html" tabindex="8">
           <img src="images/img_5.jpg" alt="Projects" class="work_thumbnail">
           <h3>Previous Projects</h3>
           <span>Websites and Flyers</span>
@@ -87,23 +99,41 @@
   <div class="gridRow galleryFilters"> 
     <div class="gridColumn">
       <img src="images/experiments/exp1.gif" alt="Toggle" style="width:100%">
-      <img src="images/experiments/exp2.gif" alt="W" style="width:100%">
-      <img src="images/experiments/exp3.gif" alt="Girl and Chick" style="width:100%">
+      <img src="images/experiments/exp6.png" alt="Geometric Face" style="width:100%">
+      <img src="images/experiments/exp9.png" alt="Space Coffee" style="width:100%">
     </div>
      
     <div class="gridColumn">
+      <img src="images/experiments/exp2.gif" alt="W" style="width:100%">
       <img src="images/experiments/exp4.png" alt="Night" style="width:100%">
       <img src="images/experiments/exp5.gif" alt="Yoga" style="width:100%">
-      <img src="images/experiments/exp6.png" alt="Geometric Face" style="width:100%">
+      
     </div>
     
     <div class="gridColumn">
-      <img src="images/experiments/exp1.gif" alt="Toggle" style="width:100%">
-      <img src="images/experiments/exp2.gif" alt="W" style="width:100%">
       <img src="images/experiments/exp3.gif" alt="Girl and Chick" style="width:100%">
+      <img src="images/experiments/exp7.png" alt="Graffalo Sketch" style="width:100%">
+      <img src="images/experiments/exp8.png" alt="Eye" style="width:100%">
     </div>
   </div>
 </div>
+
+<!---  Flip Card  ------------------------------------>
+  
+  <div id="flipCarContainer">
+  <div class="flip-card" tabIndex="9">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <a href="contact.html" tabindex="0">Contact Me</a>
+      </div>
+      <div class="flip-card-back">
+        <a href="contact.html">Let's Chat</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--- // Flip Card  ------------------------------------>
 </main>
 
 <footer>
@@ -111,22 +141,22 @@
 
     <div class="footerCol">
 
-      <div><p class="footerIntro">Hey Hey! I'm Wafa, a visual problem solver and interaction designer who loves motion, visual design, human-centered goodness, and the outdoors.
+      <div><p class="footerIntro">Hey Hey! I'm Wafa, a visual problem solver and interaction designer who loves motion, visual design, human-centered goodness, and coffee.
         </p><br><br>
-        <p><a href="images/wafa_khan_resume.pdf">View my resume →</a></p><br><br>
-        <p>© Made with ♥ by <a href="index.html"> Wafa Khan</a></p>
+        <p><a href="images/wafa_khan_resume.pdf" tabindex="10">View my resume →</a></p><br><br>
+        <p>© Made with ♥ by <a href="index.html" tabindex="11"> Wafa Khan</a></p>
       </div>
 
       <div>
         <p>Call me, Shoot me an email!</p>
         <p>248.376.3583</p>
-        <p>wkhankk@umich.edu</p>
+        <p><a href="mailto:wkhankk@umich.edu" tabindex="12">wkhankk@umich.edu</a></p>
       </div>
    
       <div>
         <p>Hit me up on</p>
-        <p><a href="http://www.linkedin.com/in/wafa-khan">Linkedin</a></p>
-        <p><a href="https://www.behance.net/wkhankkff14">Behance</a></p>
+        <p><a href="http://www.linkedin.com/in/wafa-khan" tabindex="13">Linkedin</a></p>
+        <p><a href="https://www.behance.net/wkhankkff14" tabindex="14">Behance</a></p>
       </div>
     
     </div>
