@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="images/favicon.ico" rel="shortcut icon"/>
   <title>Wafa Khan Portfolio</title>
-      <link rel="stylesheet" href="css/html5reset.css">
-    <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/html5reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Image Zoom Gallery -->
+  <link rel="stylesheet" type="text/css" href="css/zoom.css">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153674664-2"></script>
@@ -102,22 +105,22 @@
   <!-- Image Gallery Flex BoxS -->
   <div class="gridRow galleryFilters">
     <div class="gridColumn">
-      <img src="images/experiments/exp1.gif" alt="Toggle" style="width:100%">
-      <img src="images/experiments/exp6.png" alt="Geometric Face" style="width:100%">
-      <img src="images/experiments/exp9.png" alt="Space Coffee" style="width:100%">
+      <img src="images/experiments/exp1.gif" data-action="zoom" alt="Toggle" style="width:100%">
+      <img src="images/experiments/exp6.png" data-action="zoom" alt="Geometric Face" style="width:100%">
+      <img src="images/experiments/exp9.png" data-action="zoom" alt="Space Coffee" style="width:100%">
     </div>
 
     <div class="gridColumn">
-      <img src="images/experiments/exp2.gif" alt="W" style="width:100%">
-      <img src="images/experiments/exp4.png" alt="Night" style="width:100%">
-      <img src="images/experiments/exp5.gif" alt="Yoga" style="width:100%">
+      <img src="images/experiments/exp2.gif" data-action="zoom" alt="W" style="width:100%">
+      <img src="images/experiments/exp4.png" data-action="zoom" alt="Night" style="width:100%">
+      <img src="images/experiments/exp5.gif" data-action="zoom" alt="Yoga" style="width:100%">
 
     </div>
 
     <div class="gridColumn">
-      <img src="images/experiments/exp3.gif" alt="Girl and Chick" style="width:100%">
-      <img src="images/experiments/exp7.png" alt="Graffalo Sketch" style="width:100%">
-      <img src="images/experiments/exp8.png" alt="Eye" style="width:100%">
+      <img src="images/experiments/exp3.gif" data-action="zoom" alt="Girl and Chick" style="width:100%">
+      <img src="images/experiments/exp7.png" data-action="zoom" alt="Graffalo Sketch" style="width:100%">
+      <img src="images/experiments/exp8.png" data-action="zoom" alt="Eye" style="width:100%">
     </div>
   </div>
 </div>
@@ -168,7 +171,10 @@
 
     </div>
   </div>
-</footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/zoom.js"></script>
+
+</footer>
 </body>
 </html>
